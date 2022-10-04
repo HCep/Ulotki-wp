@@ -1,0 +1,173 @@
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+	color: $color__text-input;
+	border: 1px solid $color__border-input;
+	border-radius: 3px;
+	padding: 3px;
+
+	&:focus {
+		color: $color__text-input-focus;
+	}
+}
+
+select {
+	border: 1px solid $color__border-input;
+}
+
+textarea {
+	width: 100%;
+}
+.price-label {
+	font-size: 14px;
+	font-weight: 900;
+	line-height: 22px;
+	@media (min-width:1000px){
+		font-size: 20px;
+		line-height: 25px;
+	}
+}
+.form-input, .form-phone{
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 22px;
+	&:hover { 
+		outline: 0;
+	}
+	@media (min-width:1000px){
+		font-size: 16px;
+		line-height: 25px;
+	}
+}
+.price-label .form-input, .price-label .form-phone{
+	border:0px;
+	border-bottom: 2px solid #022F47;
+	color: #022F47;
+	border-radius: 0px;
+}
+.price-label .form-input::placeholder, .price-label .form-phone::placeholder{
+	color: #022F47;
+}
+.graphic_section{
+	margin-bottom:64px;
+}
+.graphic-items-list{
+	display:flex;
+	flex-wrap:wrap;
+	width:100%;
+	
+}
+.single-graphic-item, .single-reference-item, input[type="button"]{
+	display:inline-block;
+				border:2px solid #022F47;
+				border-radius:20px;
+				background-color:transparent;
+				padding:8px 17px;
+				margin-right:10px;
+				margin-bottom:10px;
+				transition:.2s ease-in-out;
+				cursor:pointer;
+				font-size: 12px;
+				font-weight: 900;
+				line-height: 14px;
+				color: #022F47;
+				cursor:pointer;
+				&:hover{
+					background-color: #022F47;
+							color: #fff;
+				}
+				@media (min-width:1000px){
+					font-size: 16px;
+					line-height: 20px;
+				}
+			}
+.active-graph, .active-ref{
+	background-color: #022F47!important;
+	color: #fff!important;
+	&:hover, &:active{
+		background-color: #fff!important;
+				color: #022F47!important;
+	}
+}
+.form-radio{
+	.wpcf7-list-item{
+		label{
+		
+			span{
+				display:inline-block;
+				border:2px solid #022F47;
+				border-radius:20px;
+				padding:8px 17px;
+				margin-bottom:10px;
+				transition:.2s ease-in-out;
+				cursor:pointer;
+				font-size: 12px;
+				font-weight: 900;
+				line-height: 14px;
+				color: #022F47;
+				cursor:pointer;
+				&:hover{
+					background-color: #022F47;
+							color: #fff;
+				}
+				@media (min-width:1000px){
+					font-size: 16px;
+					line-height: 20px;
+				}
+			}
+			input {
+				visibility:hidden;
+			}
+			input[type="checkbox"]:checked ~ span {
+				background: #022F47;
+				color: #fff;
+			}
+		}		
+	}
+}
+
+.wpcf7-form-control-wrap{
+	display:block;
+	margin-top:20px;
+}
+input[type="submit"]{
+	max-width:100%;
+	font-size: 12px;
+	font-weight: 900;
+	line-height: 14px;
+	background-color: #FFB706;
+	border-radius: 20px;
+	color: #022F47;
+	cursor:pointer;	
+	@media (min-width:1000px){
+		font-size: 16px;
+		line-height: 20px;
+	}
+}
+.form-sub{
+	border:0px;
+	width:300px;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	&:active, &:focus{
+		border:0px;
+		outline:0px;
+	}
+}
+.price-label .form-input, .price-label .form-phone{
+	max-width:100%;
+}
